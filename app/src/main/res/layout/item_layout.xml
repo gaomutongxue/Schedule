@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.xiao.Schedule.View.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    >
+
+    <!-- 第一个子view，显示ListView数据内容-->
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+    <TextView
+    android:gravity="center"
+    android:id="@+id/date_tv"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:text="2018-05-09"
+    />
+     <View
+         android:background="#757575"
+         android:layout_width="3dp"
+         android:layout_height="match_parent"
+         ></View>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_weight="1"
+    android:id="@+id/workview_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:paddingLeft="5dp"
+    android:text="内容" />
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="15dp">
+        <TextView
+            android:id="@+id/type_tv"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="类型："/>
+        <TextView
+            android:id="@+id/lv_tv"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="等级："/>
+        <TextView
+            android:id="@+id/starttime_tv"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="开始时间：02:20"/>
+        <TextView
+            android:id="@+id/endtime_tv"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="结束时间：03:20"/>
+    </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 下面是侧滑菜单项 即：第2+个子view-->
+    <Button
+        android:id="@+id/btn_zd"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:background="#d9dee4"
+        android:text="置顶"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:background="#F76E6B"
+        android:text="删除"
+        android:textColor="@android:color/white" />
+
+</com.example.xiao.Schedule.View.SwipeMenuLayout>

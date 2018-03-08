@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Schedule" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+        <mapping class="memberClass.Affair"></mapping>
+    </list>
+</litepal>
